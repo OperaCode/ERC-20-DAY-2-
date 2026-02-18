@@ -43,13 +43,6 @@ Mappings only exist in storage, this is because mappings use hash-based addressi
 
 
 
-
-
-
-
-
-
-
 ### Assignment 2
 
 ## requirements
