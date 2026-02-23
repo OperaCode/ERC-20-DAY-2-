@@ -11,7 +11,6 @@ contract PropertyManager is AccessControl {
     using SafeERC20 for IERC20;
 
     bytes32 public constant MANAGER_ROLE = keccak256("MANAGER_ROLE");
-
     IERC20 public immutable token;
 
     constructor(IERC20 _token) {
@@ -33,6 +32,7 @@ contract PropertyManager is AccessControl {
 
     Property[] private properties;
     uint256 public propertyCount;
+    
 
     event PropertyCreated(uint256 indexed id, address indexed owner, uint256 price);
     event PropertyRemoved(uint256 indexed id);
